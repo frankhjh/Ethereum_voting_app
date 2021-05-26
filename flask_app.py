@@ -1,4 +1,4 @@
-from info import w3,vote_contract
+from conn import w3,vote_contract
 from flask import Flask,render_template,request,redirect
 import json
 import time
