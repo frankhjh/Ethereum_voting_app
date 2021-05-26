@@ -6,11 +6,12 @@
   
   --If you want to test with ganache, you should change the Remix IDE environment to **Web3 Provider**  with the ganache default server address:HTTP://127.0.0.1:7545, then you can see address list in your Remix page corresponds to your Ganache local environment.
  
- 2.Copy the deployed contract address and use it to replace the address in conn.py.
- 
- 3.Call the function **Give_right_to_voters** under the constructor address(the address you use when you delpoy the contract) 
+
+ 2.Call the function **Give_right_to_voters** under the constructor address(the address you use when you delpoy the contract) 
   
    --I use python web3 library to do this, please check my conn_test.ipynb. You can also do it within Remix IDE
+ 
+ 3.Copy the deployed contract address(can be found in 'Depoyed Contract' in Remix) and use it to replace the address in conn.py.
 
  4.Run the flask app by entering following statements in your terminal:
  
