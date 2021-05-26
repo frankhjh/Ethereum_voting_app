@@ -1,7 +1,24 @@
 >A simple smart contract to realize the voting function using Solidty.
 
-I just use the **Remix IDE** to deploy my smart contract and use **Ganache** to test it
+**test procedure**
 
-I use python **web3** library to achieve the interaction between python and the smart contract 
-and use **Flask** to realize a simple user interface, so authorized voters can vote via the browser.
+1.Within the **Remix IDE**  compile and deploy my smart contract. 
+  
+  --If you want to test with ganache, you should change the Remix IDE environment to **Web3 Provider**  with the ganache default server address:HTTP://127.0.0.1:7545, then you can see address list in your Remix page corresponds to your Ganache local environment.
+ 
+ 2.Copy the deployed contract address and use it to replace the address in conn.py.
+ 
+ 3.Call the function **Give_right_to_voters** under the constructor address(the address you use when you delpoy the contract) 
+  
+   --I use python web3 library to do this, please check my conn_test.ipynb. You can also do it within Remix IDE
+
+ 4.Run the flask app by entering following statements in your terminal:
+ 
+  >export FLASK_APP=flask_app.py
+  
+  >flask run
+ 
+ 5.then we can simulate voters vote via the browser.
+
+
 
