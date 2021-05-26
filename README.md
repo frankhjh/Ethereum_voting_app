@@ -2,7 +2,7 @@
 
 **test procedure**
 
-1.Within the **Remix IDE**  compile and deploy my smart contract. 
+1.Within the **Remix**  compile and deploy my smart contract. 
   
   --If you want to test with ganache, you should change the Remix IDE environment to **Web3 Provider**  with the ganache default server address:HTTP://127.0.0.1:7545, then you can see address list in your Remix page corresponds to your Ganache local environment.
  
