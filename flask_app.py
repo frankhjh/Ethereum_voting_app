@@ -1,13 +1,18 @@
 from conn import w3,vote_contract
-from flask import Flask,render_template,request,redirect
+from flask import Flask,render_template,request,redirect,send_from_directory
 import json
 import time
+import os
 
 vote_app=Flask(__name__)
 
 @vote_app.route('/')
 def welcome():
     return render_template('content.html')
+
+@vote_app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(vote_app.root_path,'static'),'favicon.ico')
 
 @vote_app.route('/<filename>')
 def ballot_status(filename):
