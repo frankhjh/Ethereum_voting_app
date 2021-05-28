@@ -8,7 +8,7 @@
 1.Go to the **Remix IDE** (https://remix.ethereum.org/), then you should change the Remix IDE environment to **Web3 Provider**  and enter the Ganache default server address:HTTP://127.0.0.1:7545, then you can see node address list in your Remix page corresponds to your Ganache local environment. Next you can choose one address(which will be the constructor of the contract) to compile and deploy the smart contract **vote.sol**. 
   
  
- 2.Use your constructor address(the address you use when you delpoy the contract) to call the function **Give_right_to_voters** (only he has the right!)
+ 2.Use your constructor address(the address you use when you deploy the contract) to call the function **Give_right_to_voters** (only he has the right!)
   
    --I use python web3 library to do this, please check my **conn_test.ipynb**. You can also do it within Remix
  
