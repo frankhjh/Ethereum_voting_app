@@ -5,7 +5,7 @@
 0.Install the **Ganache** and then open it, it will help you to create a local blockchain environment with some test nodes.
 
 
-1.Go to the **Remix IDE** (https://remix.ethereum.org/), then you should change the Remix IDE environment to **Web3 Provider**  and enter the Ganache default server address:HTTP://127.0.0.1:7545, then you can see node address list in your Remix page corresponds to your Ganache local environment. Next you can choose one address(which will be the constructor of the contract) to compile and deploy the smart contract **vote.sol**. 
+1.Go to the **Remix IDE** (https://remix.ethereum.org/), change the Remix IDE environment to **Web3 Provider**  and enter the Ganache default server address:HTTP://127.0.0.1:7545, then you can see node address list in your Remix page corresponds to your Ganache local environment. Next you can choose one address(which will be the constructor of the contract) to compile and deploy the smart contract **vote.sol**. 
   
  
  2.Use your constructor address(the address you use when you deploy the contract) to call the function **Give_right_to_voters** (only he has the right!)
