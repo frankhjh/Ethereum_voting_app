@@ -15,7 +15,8 @@ Test Steps
 **2.Deploy Contract**
 >Change the Remix IDE environment to **Web3 Provider**  and enter the Ganache default server address:HTTP://127.0.0.1:7545, then you can find that the account addresses listed on Remix page correspond to the nodes in your Ganache local environment.   
 
->Next you can choose the **first** account in the list(which will then be the constructor of the contract, who has the right to assign vote to voters) to deploy the smart contract. *Of course you can also select another account you prefer, but then you need to change the constructor address in **ass_vote.py** accordingly. For example you pick the second account as your constructor,*. 
+>Next you can choose the **first** account in the list(which will then be the constructor of the contract, who has the right to assign vote to voters) to deploy the smart contract(need to pass the parameter---optionNames. For example,["a","b","c"]). 
+>>Of course you can also select another account you prefer, but then you need to change the constructor address in **ass_vote.py** accordingly(18th line of **ass_vote.py**). For example you pick the 2nd account as your constructor,then you need to change the `w3.eth.accounts[0]` to `w3.eth.accounts[1]`.
 
   
 **3.Obtain the address of deployed contract**
@@ -28,7 +29,7 @@ Here the addr is the address you copied in step 3.
 
  
 **5.Vote via browser**
->
+>for those account assigned votes, you can login and vote via browser.
 
 
 
