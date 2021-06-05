@@ -29,7 +29,7 @@ Here the addr is the address you copied in step 3.
 
  
 **5.Vote via browser**
->For those account assigned votes, you can login and vote via browser.
+>For those accounts which are assigned votes(accounts can be found either in Ganache or on Remix), they can login and vote via browser.
 
 
 
