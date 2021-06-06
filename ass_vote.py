@@ -8,7 +8,10 @@ def Ass_vote(addr): #addr means the address of smart contract
         abi=json.load(f)
     vote_contract=w3.eth.contract(address=addr,abi=abi)
     
-    #here I just set number of voters and amount assigned to each voter both equal 5
+    '''
+    Here I just set number of voters and amount assigned to each voter both equal 5,you are free to change them.
+    But notice that the num_voters should not exceed the number of node in Ganache test environment!!!
+    '''
     num_voters=5
     amount_per_voter=5
     print('Start assigning votes...')
